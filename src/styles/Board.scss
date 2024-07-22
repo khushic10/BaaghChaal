@@ -2,15 +2,12 @@
 .board-container {
 	height: 100vh;
 	position: relative;
+	display: flex;
+	flex-direction: column;
 }
 
 .board-svg {
 	width: 80%;
-	height: 100%;
+	height: 95%;
 	border: 1px solid black;
-}
-
-.tiger {
-	z-index: 100;
-	position: absolute;
 }
