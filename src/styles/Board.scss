@@ -8,6 +8,22 @@
 
 .board-svg {
 	width: 80%;
-	height: 95%;
+	height: 90%;
 	border: 1px solid black;
+	padding: 1rem;
+}
+
+.newGame {
+	border: 1px solid black;
+	cursor: pointer;
+	width: 15%;
+	padding: 0.4rem;
+	margin: 0.8rem 0;
+	border-radius: 10px;
+	text-align: center;
+	background-color: #fd6a02;
+	color: white;
+	font-size: 1.1rem;
+	font-weight: 500;
+	font-family: sans-serif;
 }

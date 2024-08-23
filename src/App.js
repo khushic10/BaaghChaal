@@ -1,4 +1,5 @@
 import Board from "./components/Board";
+import "react-toastify/dist/ReactToastify.css";
 
 function App() {
 	const initialTigerPositions = [

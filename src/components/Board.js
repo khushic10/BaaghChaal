@@ -54,10 +54,21 @@ const Board = ({ initialGoatPositions, initialTigerPositions }) => {
 	return (
 		<div className="board-container">
 			<div>
-				<button onClick={handleResetClick}>Reset</button>
+				<div onClick={handleResetClick} className="newGame">
+					New Game
+				</div>
 			</div>
 			<div>
-				<svg viewBox="0 0 310 190" className="board-svg">
+				<svg
+					viewBox="0 0 315 200"
+					className="board-svg"
+					style={{
+						backgroundImage: `url('https://media.istockphoto.com/id/879557220/photo/green-grass-texture-background.jpg?s=612x612&w=0&k=20&c=uDJijCOP3jOZd_Y9LxkMkRWJYjUXNPOGGrIAPhpU4AU=')`,
+						backgroundSize: "cover",
+						backgroundPosition: "center",
+						backgroundRepeat: "no-repeat",
+					}}
+				>
 					<SvgLines />
 					{crossPoints.map((point, index) => (
 						<g key={index} onClick={() => handleOtherPointClick(point)}>
